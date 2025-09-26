@@ -15,17 +15,28 @@ function App() {
     setCount(count+1);
   }
 
-  const [isLogin, setLogin] = useState(true);
+  // const [isLogin, setLogin] = useState(true);
 
-  if(isLogin) {
-    return (
-      <Logout/>
-    )
-  } else {
-    return (
-      <Login/>
-    )
+  // if(isLogin) {
+  //   return (
+  //     <Logout/>
+  //   )
+  // } else {
+  //   return (
+  //     <Login/>
+  //   )
+  // }
+
+  function handleClick(e) {
+      e.preventDefault()
+      alert("click ker diya ha to na");
   }
+
+  return (
+    <button onClick={handleClick}>
+      click me
+    </button>
+  )
 
 
 
