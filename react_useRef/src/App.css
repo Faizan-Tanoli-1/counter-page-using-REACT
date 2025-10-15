@@ -1,0 +1,118 @@
+/* App.css */
+
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+}
+
+/* Container */
+#main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Stopwatch box */
+.stopwatch-box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 3rem 4rem;
+  border-radius: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6),
+              inset 0 0 30px rgba(255, 255, 255, 0.05);
+  text-align: center;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stopwatch-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 40px rgba(0, 255, 255, 0.3);
+}
+
+/* Title */
+#title {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff;
+}
+
+/* Time Display */
+#time-display {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #a0ff9d;
+  text-shadow: 0 0 15px #a0ff9d;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Buttons */
+button {
+  border: none;
+  outline: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px 0;
+  width: 160px;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+/* Start Button */
+#start-btn {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  box-shadow: 0 0 15px rgba(0, 114, 255, 0.6);
+}
+#start-btn:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 114, 255, 0.9);
+}
+
+/* Stop Button */
+#stop-btn {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  box-shadow: 0 0 15px rgba(255, 65, 108, 0.6);
+}
+#stop-btn:hover {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 65, 108, 0.9);
+}
+
+/* Reset Button */
+#reset-btn {
+  background: linear-gradient(135deg, #56ab2f, #a8e063);
+  box-shadow: 0 0 15px rgba(86, 171, 47, 0.6);
+}
+#reset-btn:hover {
+  background: linear-gradient(135deg, #a8e063, #56ab2f);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(168, 224, 99, 0.9);
+}
